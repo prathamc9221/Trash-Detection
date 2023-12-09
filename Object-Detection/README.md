@@ -7,6 +7,8 @@ Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-t
 [![arxiv.org](http://img.shields.io/badge/cs.CV-arXiv%3A2207.02696-B31B1B.svg)](https://arxiv.org/abs/2207.02696)
 
 
-Training using TRASH dataset
+Training using TRASH dataset:
+
 %cd /content/gdrive/MyDrive/yolov7
+
 !python train.py --batch 16 --cfg cfg/training/yolov7.yaml --epochs 45 --data {dataset.location}/data.yaml --weights 'yolov7.pt' --device 0 
