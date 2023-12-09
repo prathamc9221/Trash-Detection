@@ -1,4 +1,4 @@
-<h1>Experiment of Detection of Trash using YOLOV7</h1>h2>
+<h1>Experiment of Detection of Trash using YOLOV7</h1>
 
 Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors](https://arxiv.org/abs/2207.02696)
 
@@ -23,6 +23,13 @@ and accuracy. Notably, YOLOv7 achieves these results through
 training exclusively on the MS COCO dataset from scratch, 
 without relying on additional datasets or pre-trained weights.</h2>
 
+<h3>Dataset requirements</h3>
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="7V4JO5rw8XDPaod54Qdc")
+project = rf.workspace("a-s").project("uwh")
+dataset = project.version(6).download("yolov7")
 
 
 <h>Training using TRASH dataset:</h>
@@ -30,5 +37,7 @@ without relying on additional datasets or pre-trained weights.</h2>
 %cd /content/gdrive/MyDrive/yolov7
 
 !python train.py --batch 16 --cfg cfg/training/yolov7.yaml --epochs 45 --data {dataset.location}/data.yaml --weights 'yolov7.pt' --device 0 
+
+
 
 
