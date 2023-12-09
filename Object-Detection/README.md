@@ -49,6 +49,10 @@ pip install seaborn thop
 # go to code folder
 cd /yolov7
 ```
+## Training
+
+%cd /content/gdrive/MyDrive/yolov7
+!python train.py --batch 16 --cfg cfg/training/yolov7.yaml --epochs 45 --data {dataset.location}/data.yaml --weights 'yolov7.pt' --device 0 
 
 </details>
 
