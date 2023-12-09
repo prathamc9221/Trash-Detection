@@ -36,7 +36,7 @@ project = rf.workspace("a-s").project("uwh")
 dataset = project.version(6).download("yolov7")
 
 
-<h>Training using TRASH dataset:</h>
+<h3>Training using TRASH dataset:</h3>
 
 %cd /content/gdrive/MyDrive/yolov7
 
