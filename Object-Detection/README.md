@@ -42,6 +42,11 @@ dataset = project.version(6).download("yolov7")
 
 !python train.py --batch 16 --cfg cfg/training/yolov7.yaml --epochs 45 --data {dataset.location}/data.yaml --weights 'yolov7.pt' --device 0 
 
-
+<h3>Output Results</h3>
+The results from the experiments demonstrate that the 
+system successfully identifies trash within images with 
+high accuracy. The model has shown strong performance 
+on the validation set. Now, let's explore its functionality 
+with some image examples. 
 
 
