@@ -26,9 +26,13 @@ without relying on additional datasets or pre-trained weights.</h2>
 <h3>Dataset requirements</h3>
 !pip install roboflow
 
+
 from roboflow import Roboflow
+
 rf = Roboflow(api_key="7V4JO5rw8XDPaod54Qdc")
+
 project = rf.workspace("a-s").project("uwh")
+
 dataset = project.version(6).download("yolov7")
 
 
