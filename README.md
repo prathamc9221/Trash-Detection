@@ -1,1 +1,1 @@
-# Object-Detection
+# Garbage-Detection
