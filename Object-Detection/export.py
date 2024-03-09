@@ -38,7 +38,7 @@ if __name__ == '__main__':
     opt.img_size *= 2 if len(opt.img_size) == 1 else 1  # expand
     opt.dynamic = opt.dynamic and not opt.end2end
     opt.dynamic = False if opt.dynamic_batch else opt.dynamic
-    print(opt)
+    #print(opt)        #commenting print
     set_logging()
     t = time.time()
 
